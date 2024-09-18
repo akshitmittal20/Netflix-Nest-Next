@@ -11,7 +11,7 @@ export default function Signup() {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/auth/register', {
+      const response = await fetch('netflix-nest-backend.vercel.app/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

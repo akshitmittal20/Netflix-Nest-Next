@@ -8,7 +8,7 @@ const MovieCard = ({ movie }) => {
         return;
       }
 
-      const response = await fetch('http://localhost:5000/users/add-favorite', {
+      const response = await fetch('netflix-nest-backend.vercel.app/users/add-favorite', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
