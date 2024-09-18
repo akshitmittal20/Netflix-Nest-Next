@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { getPopularMovies, searchMovies, getMovieImages } from '../services/api';
 import MovieCard from '../components/MovieCard';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/NavBar.jsx';
 
 
 export default function Home() {

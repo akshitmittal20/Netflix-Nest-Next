@@ -1,7 +1,7 @@
 // src/pages/favorites.js
 import { useState, useEffect } from 'react';
 import { getMovieImages } from '../services/api';  // Use the existing getMovieImages API function
-import NavBar from '../components/NavBar';
+import NavBar from '../components/NavBar.jsx';
 
 export default function Favorites() {
   const [favoriteMovies, setFavoriteMovies] = useState([]);

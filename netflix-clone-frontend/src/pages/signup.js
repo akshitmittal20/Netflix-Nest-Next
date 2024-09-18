@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import NavBar from '../components/NavBar';
+import NavBar from '../components/NavBar.jsx';
 
 export default function Signup() {
   const [email, setEmail] = useState('');
