@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -24,4 +26,26 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure items are aligned vertically */
+  padding: 1rem 0; /* Optional padding */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem; /* Space between the links */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
 }

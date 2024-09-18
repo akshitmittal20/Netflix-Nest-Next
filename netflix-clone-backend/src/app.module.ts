@@ -8,10 +8,9 @@ import { MoviesModule } from './movies/movies.module';
 @Module({
   imports: [
     ConfigModule.forRoot(), // Enable environment variables
-    // Debug environment variables
-    MongooseModule.forRoot(process.env.MONGO_URI, { dbName: process.env.DB_NAME }),
-    AuthModule,
-    UsersModule,
+    MongooseModule.forRoot(process.env.MONGO_URI, { dbName: process.env.DB_NAME }), // MongoDB connection
+    AuthModule, 
+    UsersModule, // UsersModule imports its own controller and services
     MoviesModule,
   ],
 })

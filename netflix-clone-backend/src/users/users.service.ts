@@ -16,4 +16,17 @@ export class UsersService {
   async findOne(email: string): Promise<User | undefined> {
     return this.userModel.findOne({ email }).exec();
   }
+
+  async addFavorite(email: string, movieId: string): Promise<User> {
+    const user = await this.userModel.findOne({ email }).exec();
+    if (!user.favorites.includes(movieId)) {
+      user.favorites.push(movieId);
+    }
+    return user.save();
+  }
+
+  async getFavorites(email: string): Promise<{ favorites: string[] }> {
+    const user = await this.userModel.findOne({ email }).exec();
+    return { favorites: user.favorites };
+  }
 }

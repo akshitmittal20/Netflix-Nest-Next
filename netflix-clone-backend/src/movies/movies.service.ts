@@ -15,7 +15,7 @@ export class MoviesService {
         currentCountry: 'US',
       },
       headers: {
-        'x-rapidapi-key': 'YOUR_RAPIDAPI_KEY',
+        'x-rapidapi-key': '45f68e0851msh81fb6708c9267a8p132eadjsnd5249c0bfbdc',
         'x-rapidapi-host': 'imdb8.p.rapidapi.com',
       },
     });
@@ -30,7 +30,7 @@ export class MoviesService {
         language: 'en-US',
       },
       headers: {
-        'x-rapidapi-key': 'YOUR_RAPIDAPI_KEY',
+        'x-rapidapi-key': '45f68e0851msh81fb6708c9267a8p132eadjsnd5249c0bfbdc',
         'x-rapidapi-host': 'imdb8.p.rapidapi.com',
       },
     });

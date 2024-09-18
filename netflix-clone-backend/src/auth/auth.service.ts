@@ -36,6 +36,16 @@ export class AuthService {
   async register(registerDto: RegisterDto) {
     const { email, password } = registerDto;
     const hashedPassword = await bcrypt.hash(password, 10);
-    return this.usersService.create({ email, password: hashedPassword });
+    const newUser = await this.usersService.create({ email, password: hashedPassword });
+    // Generate JWT token
+    const payload = { email: newUser.email, sub: newUser._id };
+    const accessToken = this.jwtService.sign(payload);
+    
+    // Return the user details along with the token
+    return { 
+      email: newUser.email, 
+      access_token: accessToken,  // Include the JWT token in the response
+      message: 'User registered successfully' 
+    };
   }
 }

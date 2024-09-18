@@ -5,7 +5,7 @@ import axios from 'axios';
 const apiClient = axios.create({
   baseURL: 'https://imdb8.p.rapidapi.com',
   headers: {
-    'x-rapidapi-key': '0247e87601msh162c5b9df63f630p1bd6ddjsnb8498d9c9018',
+    'x-rapidapi-key': '45f68e0851msh81fb6708c9267a8p132eadjsnd5249c0bfbdc',
     'x-rapidapi-host': 'imdb8.p.rapidapi.com'
   },
 });
