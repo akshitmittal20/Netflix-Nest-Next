@@ -169,7 +169,7 @@ export default function Home() {
                   />
                   <h3 className="text-lg font-bold mt-2">{movie.title || 'Untitled Movie'}</h3>
                   <button
-                      className="bg-red-600 mt-2 p-2 rounded text-white font-bold"
+                      className="bg-red-600 mt-2 p-2 rounded text-white font-bold w-full"
                       onClick={() => addToFavorites(movie.id)} // Use the addToFavorites function
                     >
                       Add to Favorites
