@@ -23,7 +23,7 @@ export default function Favorites() {
       // Start loading
       setLoading(true);
 
-      const response = await fetch('netflix-nest-backend.vercel.app/users/favorites', {
+      const response = await fetch('https://netflix-nest-backend.vercel.app/users/favorites', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${token}`,

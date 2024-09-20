@@ -11,7 +11,7 @@ export default function Login() {
     event.preventDefault();
 
     try {
-      const response = await fetch('netflix-nest-backend.vercel.app/auth/login', {
+      const response = await fetch('https://netflix-nest-backend.vercel.app/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
